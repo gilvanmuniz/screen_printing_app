@@ -46,6 +46,8 @@ flutter:
   #  - images/a_dot_ham.jpeg
   assets:
     - lib/images/color_icon-SMALL.png
+    - lib/images/SilkCost-white-icon.png
+    - lib/images/SilkCost-white-icon2.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

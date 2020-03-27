@@ -28,15 +28,31 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  var icon;
+
      
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
+      appBar: AppBar(                             
+        title: Row(
+          children: <Widget>[
+            Container(
+              height: 60,
+              child: FittedBox(
+                child: Image.asset('lib/images/SilkCost-white-icon2.png')
+                ),
+            ),
+            Container(
+              padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+              child: Text(widget.title)
+              )
+          ],
+        ),       
       ),
+      drawer: Image.asset('lib/images/color_icon-SMALL.png' ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[          
           SelectorsSum()
         ],

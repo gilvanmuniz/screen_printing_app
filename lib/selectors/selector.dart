@@ -62,7 +62,15 @@ class _SelectorState extends State<Selector> {
                   items:widget.lista.map((String dropDownStringItem) {
                     return DropdownMenuItem<String>(
                       value: dropDownStringItem,
-                      child: Text(dropDownStringItem),
+                      child: Text(
+                        dropDownStringItem,
+                        style: TextStyle(
+                          fontWeight: FontWeight.w900,
+                          fontSize: 22,
+                          color: Colors.blueGrey
+
+                        ),
+                      ),
                     );
                   }).toList(),                            
                   onChanged: (String novoItemSelecionado) {
